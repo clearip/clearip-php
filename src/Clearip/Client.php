@@ -12,7 +12,7 @@ class Client
 
         if (empty($apiKey)) {
             throw new \Exception(
-                'api key is required'
+                'api key required'
             );
         }
 
@@ -27,7 +27,7 @@ class Client
     {
 
         if (!preg_match('/^(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).){3}([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/', $ip)) {
-            throw new \Exception('ip is required');
+            throw new \Exception('ip required');
         }
 
         try {
