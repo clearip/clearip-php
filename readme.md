@@ -1,4 +1,4 @@
-# clear ip node library
+# clearip.io PHP client 
 
 php client library for clear ip
 
