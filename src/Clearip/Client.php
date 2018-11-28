@@ -7,6 +7,12 @@ class Client
 {
 
     protected $apikey;
+
+    /**
+     * construct the clearip client and Guzzle httpClient 
+     *
+     * @param String $apiKey
+     */
     public function __construct(String $apiKey)
     {
 
@@ -23,6 +29,12 @@ class Client
 
     }
 
+    /**
+     * get ip info from clearip services
+     *
+     * @param String $ip
+     * @return JSON||Exception
+     */
     public function getIpinfo($ip)
     {
 
