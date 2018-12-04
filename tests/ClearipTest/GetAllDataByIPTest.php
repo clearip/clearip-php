@@ -1,8 +1,7 @@
 <?php
 use Clearip\IPInfoApi;
-use PHPUnit\Framework\TestCase;
 
-class SampleTest extends TestCase
+class SampleTest extends PHPUnit_Framework_TestCase
 {
     public function testGetAllDataByIP()
     {
@@ -19,6 +18,6 @@ class SampleTest extends TestCase
         $clearIPClientStub->IPInfoApi = new IPInfoApi($fakeHttpClient);
         $response = $clearIPClientStub->IPInfoApi->GetAllDataByIP('192.168.1.1');
 
-        $this->assertEquals("United States", $response->country);
+        $this->assertEquals('United States', $response->country);
     }
 }
