@@ -36,8 +36,7 @@ class HttpClient implements HttpClientInterface
 
         try {
             $res = $this->httpClient->get($url . "?apikey=" . $this->apiKey);
-
-            return $res;
+            return $res->getBody();
         } catch (RequestException $e) {
             throw new \Exception(
                 'request error'

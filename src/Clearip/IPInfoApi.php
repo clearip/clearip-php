@@ -1,7 +1,6 @@
 <?php
 namespace Clearip;
 
-
 class IPInfoApi
 {
 
@@ -32,7 +31,7 @@ class IPInfoApi
 
         try {
             $res = $this->newHttpClient->get("/ip/" . $ip . "/json");
-            return json_decode($res->getBody());
+            return json_decode($res);
 
         } catch (RequestException $e) {
             throw new \Exception(
