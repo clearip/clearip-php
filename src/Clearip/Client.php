@@ -9,11 +9,11 @@ class Client
     protected $apikey;
 
     /**
-     * construct the clearip client and Guzzle httpClient 
+     * construct the clearip client and Guzzle httpClient
      *
      * @param String $apiKey
      */
-    public function __construct(String $apiKey)
+    public function __construct(String $apiKey, HttpClientInterface $client = null)
     {
 
         if (empty($apiKey)) {
@@ -23,34 +23,10 @@ class Client
         }
 
         $this->apiKey = $apiKey;
-        $this->httpClient = new \GuzzleHttp\Client([
-            'base_uri' => 'https://api.clearip.io',
-        ]);
+        $this->newHttpClient = ($client) ?: new HttpClient($apiKey);
+
+        $this->IPInfoApi = new IPInfoApi($this->newHttpClient);
 
     }
 
-    /**
-     * get ip info from clearip services
-     *
-     * @param String $ip
-     * @return JSON||Exception
-     */
-    public function getIpinfo($ip)
-    {
-
-        if (!preg_match('/^(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).){3}([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/', $ip)) {
-            throw new \Exception('ip required');
-        }
-
-        try {
-            $res = $this->httpClient->get("/ip/" . $ip . "/json?apikey=" . $this->apiKey);
-            return json_decode($res->getBody());
-
-        } catch (RequestException $e) {
-            throw new \Exception(
-                'request error'
-            );
-        }
-
-    }
 }

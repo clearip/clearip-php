@@ -7,11 +7,11 @@
     "license": "",
     "require": {
         "php": ">=5.3.3",
-        "phpunit/PHPUnit": "3.7.*",
         "instaclick/php-code-sniffer": "dev-master",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
+        "phpunit/phpunit": "^7.4"
     },
     "autoload": {
         "psr-4": {
