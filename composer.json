@@ -6,8 +6,7 @@
     "homepage": "http://www.example.org/",
     "license": "",
     "require": {
-        "php": ">=5.3.3",
-        "instaclick/php-code-sniffer": "dev-master",
+        "php": ">= 5.6",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
