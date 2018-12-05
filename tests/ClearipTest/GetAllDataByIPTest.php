@@ -5,10 +5,12 @@ class SampleTest extends PHPUnit_Framework_TestCase
 {
     public function testGetAllDataByIP()
     {
+
+        $fakeKey = "fake key";
         $clearIPClientStub = $this->getMockBuilder('Clearip\Client')->disableOriginalConstructor()->getMock();
 
         $fakeHttpClient = $this->getMockBuilder('\Clearip\HttpClient')
-            ->setConstructorArgs(array("fake api key"))
+            ->setConstructorArgs(array($fakeKey))
             ->getMock();
 
         $fakeHttpClient->expects($this->once())
