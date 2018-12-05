@@ -13,7 +13,7 @@ class HttpClient implements HttpClientInterface
      *
      * @param String $apiKey
      */
-    public function __construct(string $apiKey)
+    public function __construct($apiKey)
     {
 
         $this->apiKey = $apiKey;
