@@ -13,7 +13,7 @@ class Client
      *
      * @param String $apiKey
      */
-    public function __construct(string $apiKey, HttpClientInterface $client = null)
+    public function __construct( $apiKey, HttpClientInterface $client = null)
     {
 
         if (empty($apiKey)) {

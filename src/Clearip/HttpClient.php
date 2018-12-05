@@ -31,7 +31,7 @@ class HttpClient implements HttpClientInterface
      * @param String $ip
      * @return JSON||Exception
      */
-    public function get(string $url)
+    public function get($url)
     {
 
         try {
