@@ -4,6 +4,6 @@ namespace Clearip;
 interface HttpClientInterface
 {
 
-    public function get(string $url);
+    public function get($url);
 
 }

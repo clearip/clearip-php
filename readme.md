@@ -1,4 +1,4 @@
-# clearip.io PHP client
+# clearip.io PHP client [![Build Status](https://travis-ci.com/clearip/clearip-php.svg?branch=master)](https://travis-ci.com/clearip/clearip-php)
 
 php client library for clear ip
 

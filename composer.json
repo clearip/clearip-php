@@ -2,12 +2,18 @@
     "name": "Clearip-php",
     "description": "",
     "type": "library",
+    "authors": [
+        {
+            "name": "Muhamad Omar",
+            "email": "mohamadomr33@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "keywords": [],
-    "homepage": "http://www.example.org/",
+    "homepage": "https://github.com/clearip/clearip-php",
     "license": "",
     "require": {
-        "php": ">=5.3.3",
-        "instaclick/php-code-sniffer": "dev-master",
+        "php": ">=5.5",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
