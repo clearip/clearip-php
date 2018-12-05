@@ -8,7 +8,7 @@ class SampleTest extends PHPUnit_Framework_TestCase
         $clearIPClientStub = $this->getMockBuilder('Clearip\Client')->disableOriginalConstructor()->getMock();
 
         $fakeHttpClient = $this->getMockBuilder('\Clearip\HttpClient')
-            ->setConstructorArgs(array('fake api key'))
+            ->setConstructorArgs(array("fake api key"))
             ->getMock();
 
         $fakeHttpClient->expects($this->once())
