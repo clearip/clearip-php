@@ -1,4 +1,4 @@
-# clearip.io PHP client 
+# clearip.io PHP client [![Build Status](https://travis-ci.com/clearip/clearip-php.svg?branch=master)](https://travis-ci.com/clearip/clearip-php)
 
 php client library for clear ip
 
@@ -19,16 +19,15 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Clearip\Client;
 
-$clearip = new Client('api key here');
+$clearip = new Client('API Key Here');
 
 try {
 
-    var_dump($clearip->getIpinfo('ip address here'));
+    var_dump($clearip->IPInfoApi->GetAllDataByIP('IP Here'));
 
 } catch (Exception $e) {
     echo $e->getMessage();
 }
-
 
 
 ```
