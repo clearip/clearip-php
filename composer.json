@@ -1,6 +1,7 @@
 {
-    "name": "Clearip-php",
-    "description": "",
+    "name": "clearip/clearip-php",
+    "description": "Free IP to Geolocation API.",
+    "version":"1.0.0",
     "type": "library",
     "authors": [
         {
@@ -10,9 +11,9 @@
             "role": "Developer"
         }
     ],
-    "keywords": [],
+    "keywords": ["clearip", "IP", "Geolocation API"],
     "homepage": "https://github.com/clearip/clearip-php",
-    "license": "",
+    "license": "MIT",
     "require": {
         "php": ">=5.5",
         "guzzlehttp/guzzle": "^6.3"

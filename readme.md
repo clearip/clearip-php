@@ -5,7 +5,7 @@ php client library for clear ip
 ## Installation
 
 ```bash
-composer require clearip
+composer require clearip/clearip-php
 ```
 
 ## usage
