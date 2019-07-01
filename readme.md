@@ -1,11 +1,11 @@
-# clearip.io PHP client [![Build Status](https://travis-ci.com/clearip/clearip-php.svg?branch=master)](https://travis-ci.com/clearip/clearip-php)
+# iptrace.io PHP client [![Build Status](https://travis-ci.com/iptrace/iptrace-php.svg?branch=master)](https://travis-ci.com/iptrace/iptrace-php)
 
 php client library for clear ip
 
 ## Installation
 
 ```bash
-composer require clearip/clearip-php
+composer require getiptrace/iptrace-php
 ```
 
 ## usage
@@ -17,13 +17,13 @@ Get ip info:
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Clearip\Client;
+use IPtrace\Client;
 
-$clearip = new Client('API Key Here');
+$iptrace = new Client('API Key Here');
 
 try {
 
-    var_dump($clearip->IPInfoApi->GetAllDataByIP('IP Here'));
+    var_dump($iptrace->IPInfoApi->GetAllDataByIP('IP Here'));
 
 } catch (Exception $e) {
     echo $e->getMessage();

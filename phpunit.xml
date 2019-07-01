@@ -10,8 +10,8 @@
          stopOnFailure="false"
          >
     <testsuites>
-       <testsuite name="Clearip-php">
-            <directory>./tests/ClearipTest</directory>
+       <testsuite name="IPtrace-php">
+            <directory>./tests/IPtraceTest</directory>
         </testsuite>
     </testsuites>
 </phpunit>

@@ -1,5 +1,5 @@
 {
-    "name": "clearip/clearip-php",
+    "name": "iptrace/iptrace-php",
     "description": "Free IP to Geolocation API.",
     "version":"1.0.0",
     "type": "library",
@@ -11,8 +11,8 @@
             "role": "Developer"
         }
     ],
-    "keywords": ["clearip", "IP", "Geolocation API"],
-    "homepage": "https://github.com/clearip/clearip-php",
+    "keywords": ["iptrace", "IP", "Geolocation API"],
+    "homepage": "https://github.com/iptrace/iptrace-php",
     "license": "MIT",
     "require": {
         "php": ">=5.5",
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Clearip\\": "src/Clearip"
+            "IPtrace\\": "src/IPtrace"
         }
     }
 }

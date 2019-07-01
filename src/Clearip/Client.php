@@ -1,5 +1,5 @@
 <?php
-namespace Clearip;
+namespace IPtrace;
 
 use GuzzleHttp\Exception\RequestException;
 
@@ -9,7 +9,7 @@ class Client
     protected $apikey;
 
     /**
-     * construct the clearip client and Guzzle httpClient
+     * construct the iptrace client and Guzzle httpClient
      *
      * @param String $apiKey
      */

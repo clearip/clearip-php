@@ -1,5 +1,5 @@
 <?php
-namespace Clearip;
+namespace IPtrace;
 
 interface HttpClientInterface
 {

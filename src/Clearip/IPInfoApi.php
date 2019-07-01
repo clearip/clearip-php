@@ -1,11 +1,11 @@
 <?php
-namespace Clearip;
+namespace IPtrace;
 
 class IPInfoApi
 {
 
     /**
-     * construct the clearip client and Guzzle httpClient
+     * construct the iptrace client and Guzzle httpClient
      *
      * @param String $apiKey
      */
@@ -17,7 +17,7 @@ class IPInfoApi
     }
 
     /**
-     * get ip info from clearip services
+     * get ip info from iptrace services
      *
      * @param String $ip
      * @return JSON||Exception

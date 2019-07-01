@@ -1,5 +1,5 @@
 <?php
-namespace Clearip;
+namespace IPtrace;
 
 use GuzzleHttp\Exception\RequestException;
 
@@ -17,7 +17,7 @@ class HttpClient implements HttpClientInterface
     {
 
         $this->apiKey = $apiKey;
-        $this->baseUri = "https://api.clearip.io";
+        $this->baseUri = "https://api.iptrace.io";
 
         $this->httpClient = new \GuzzleHttp\Client([
             'base_uri' => $this->baseUri,
